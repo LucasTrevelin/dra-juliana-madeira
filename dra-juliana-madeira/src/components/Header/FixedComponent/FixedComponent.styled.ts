@@ -10,8 +10,7 @@ export const ComponentContainer = styled.div`
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  position: fixed;
-  top: 0;
+  flex: 1;
 `
 
 export const Container = styled.header`
