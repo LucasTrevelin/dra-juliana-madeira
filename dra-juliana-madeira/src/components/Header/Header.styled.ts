@@ -27,7 +27,7 @@ export const Container = styled.header`
   justify-content: space-between;
   flex: 1;
   z-index: 30;
-  background-color: ${({ theme }) => theme.colors.bakcgroundPrimary};
+  background-color: ${({ theme }) => theme.colors.backgroundPrimary};
   padding: 1rem;
 `
 
@@ -35,9 +35,9 @@ export const ImageContainer = styled.div`
   height: 100%;
   width: 100%;
   flex: 1;
-  margin-left: 2rem;
+  margin-left: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -47,8 +47,8 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  aspect-ratio: 8.3/1;
-  width: 250px;
+  aspect-ratio: 8.83/1;
+  width: 468px;
   margin-left: 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

@@ -46,5 +46,5 @@ export const Divider = styled.span`
   min-height: 11px;
   height: 100%;
   min-width: 100%;
-  background-color: ${({ theme }) => theme.colors.secundary};
+  background-color: ${({ theme }) => theme.colors.secondary};
 `

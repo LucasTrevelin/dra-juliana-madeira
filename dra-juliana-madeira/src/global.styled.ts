@@ -13,7 +13,7 @@ export default createGlobalStyle`
   font-weight: 400;
   
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #000000;
   background-color: #FFFFFF;
   min-width: 100vw;
   width: 100%;
@@ -49,9 +49,9 @@ body {
 export const theme = {
   colors: {
     primary: '#D5BF8E',
-    secundary: '#8F8B8A',
-    bakcgroundPrimary: '#FFF8EB',
-    greenLighter: '#AED7C3',
+    secondary: '#8F8B8A',
+    backgroundPrimary: '#FFF8EB',
+    redHighlight: '#3F090C',
     greenLight: '#98FB98',
     greenWhatsApp: '#27D366',
     background: '#FFFFFF',
