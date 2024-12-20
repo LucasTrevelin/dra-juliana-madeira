@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import * as S from './CardExhibition.styled'
 import Card from '../Card/Card'
@@ -12,8 +12,15 @@ const CardExhibition: React.FC<ICardExhibitionProps> = ({
   titleColor,
   boxColor
 }) => {
+  const scrollRef = useRef(null)
   return (
-    <S.Container id={title}>
+    <S.Container
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ root: scrollRef, once: true }}
+      transition={{ ease: 'linear', delay: 0.6 }}
+      id={title}
+    >
       <S.TitleContainer $titleAlign={titleAlign}>
         <S.Title $titleColor={titleColor}>{title}</S.Title>
         <S.Subtitle>{subtitle}</S.Subtitle>

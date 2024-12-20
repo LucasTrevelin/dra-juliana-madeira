@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import * as S from './Welcome.styled'
 import Button from '../Button/Button'
 
 const Welcome: React.FC = () => {
+  const scrollRef = useRef(null)
+
   return (
-    <S.Container id='Home'>
+    <S.Container
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ root: scrollRef, once: true }}
+      transition={{ ease: 'linear', delay: 0.5 }}
+      id='Home'
+    >
       <S.Title>Seja bem-vindo(a)</S.Title>
       <S.Subtitle>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

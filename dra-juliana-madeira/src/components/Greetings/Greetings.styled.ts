@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -7,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const Greetings = styled.h1`
+export const Greetings = styled(motion.h1)`
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.secondary};
 `
@@ -30,7 +31,9 @@ export const IntroContent = styled.div`
   padding: 1.5rem;
 `
 
-export const PortraitFrame = styled.img<{ $coordinate: 'up' | 'bottom' }>`
+export const PortraitFrame = styled(motion.img)<{
+  $coordinate: 'up' | 'bottom'
+}>`
   position: absolute;
   top: ${({ $coordinate }) => $coordinate === 'up' && 0};
   left: ${({ $coordinate }) => $coordinate === 'up' && 0};
@@ -38,7 +41,7 @@ export const PortraitFrame = styled.img<{ $coordinate: 'up' | 'bottom' }>`
   right: ${({ $coordinate }) => $coordinate === 'bottom' && 0};
 `
 
-export const IntroFrame = styled.main`
+export const IntroFrame = styled(motion.main)`
   border-radius: 0 20px 0 20px;
   padding: 2rem;
   background-color: ${({ theme }) => theme.colors.secondary};
@@ -62,7 +65,7 @@ export const SecondMessage = styled.span`
   line-height: 1.75rem;
   font-family: 'Open Sans', sans-serif;
 `
-export const CoverPhoto = styled.img`
+export const CoverPhoto = styled(motion.img)`
   aspect-ratio: 0.79/1;
   height: 580px;
 `

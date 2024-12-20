@@ -6,15 +6,37 @@ import Button from '../Button/Button'
 const Greetings: React.FC = () => {
   return (
     <S.Container>
-      <S.Greetings> Olá, Paciente </S.Greetings>
+      <S.Greetings
+        variants={{
+          hiddenLeft: { opacity: 0, x: -30 },
+          visible: { opacity: 1, x: 0 }
+        }}
+        viewport={{ once: true }}
+        initial='hiddenLeft'
+        animate='visible'
+        transition={{ ease: 'linear', delay: 0.3 }}
+      >
+        Olá, Paciente
+      </S.Greetings>
       <S.GreetingsContent>
         <S.IntroContent>
           <S.PortraitFrame
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            animate='visible'
+            viewport={{ once: true }}
+            transition={{ ease: 'linear', delay: 0.3 }}
             src='src/assets/upper-left-frame.png'
             alt='frame-upper-left'
             $coordinate='up'
           />
-          <S.IntroFrame>
+          <S.IntroFrame
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            animate='visible'
+            transition={{ ease: 'linear', delay: 0.3 }}
+          >
             <S.FirstMessage>
               Seja muito bem-vindo! <br />
               Neste site, você vai poder agendar sua consulta, ter conhecimento
@@ -37,12 +59,25 @@ const Greetings: React.FC = () => {
             </S.ButtonContainer>
           </S.IntroFrame>
           <S.PortraitFrame
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            animate='visible'
+            viewport={{ once: true }}
+            transition={{ ease: 'linear', delay: 0.3 }}
             src='src/assets/bottom-right-frame.png'
             alt='frame-bottom-right'
             $coordinate='bottom'
           />
         </S.IntroContent>
-        <S.CoverPhoto src='src/assets/cover-photo.jpg' alt='cover-photo' />
+        <S.CoverPhoto
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          animate='visible'
+          viewport={{ once: true }}
+          transition={{ ease: 'linear', delay: 0.3 }}
+          src='src/assets/cover-photo.jpg'
+          alt='cover-photo'
+        />
       </S.GreetingsContent>
     </S.Container>
   )

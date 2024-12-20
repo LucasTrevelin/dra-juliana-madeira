@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 const titleAlignMapper = {
@@ -6,7 +7,7 @@ const titleAlignMapper = {
   right: 'flex-end'
 }
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   aspect-ratio: 2/1;
   width: 100%;
   display: flex;

@@ -10,6 +10,7 @@ import { treatmentsConstants } from '../../components/CardExhibition/TreatmentsC
 import { equipmentsConstants } from '../../components/CardExhibition/EquipmentConstants'
 import About from '../../components/About/About'
 import { ContactSection } from '../../components/ContactSection'
+import Footer from '../../components/Footer/Footer'
 
 const Landing: React.FC = () => {
   return (
@@ -47,6 +48,7 @@ const Landing: React.FC = () => {
       <S.Section $margin='10rem 0'>
         <ContactSection />
       </S.Section>
+      <Footer />
     </S.Container>
   )
 }

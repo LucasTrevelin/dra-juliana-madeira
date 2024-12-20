@@ -7,7 +7,7 @@ export const ContactSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 3rem;
   height: 17.7rem;
   flex: 1;
 `

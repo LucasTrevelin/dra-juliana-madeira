@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import * as S from './About.styled'
 
 const About: React.FC = () => {
+  const scrollRef = useRef(null)
   return (
-    <S.Container id='Sobre a Dra. Juliana Madeira'>
+    <S.Container
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ root: scrollRef, once: true }}
+      transition={{ ease: 'linear', delay: 0.6 }}
+      id='Sobre a Dra. Juliana Madeira'
+    >
       <S.InfoContainer>
         <S.ContentContainer>
           <S.Title>Dra Jualiana Madeira</S.Title>

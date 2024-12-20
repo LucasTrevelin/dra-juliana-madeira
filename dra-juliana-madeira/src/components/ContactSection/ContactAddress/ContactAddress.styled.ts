@@ -37,7 +37,7 @@ export const AddressContainer = styled(motion.article)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 `
 
 export const Image = styled.img`
