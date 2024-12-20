@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 import { devices } from './helpers/breakpoints.helpers'
 
 export default createGlobalStyle`
-
 :root {
   font-family: "Comfortaa", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -43,7 +42,8 @@ body {
       font-size: 1.25rem;
     }
   }
-}`
+}
+`
 
 //Global colors
 export const theme = {
@@ -51,6 +51,8 @@ export const theme = {
     primary: '#D5BF8E',
     secondary: '#8F8B8A',
     backgroundPrimary: '#FFF8EB',
+    backgroundPrimary60: 'rgba(255, 248, 235, 0.6)',
+    backgroundSecondary: '#E9E9E9',
     redHighlight: '#3F090C',
     greenLight: '#98FB98',
     greenWhatsApp: '#27D366',

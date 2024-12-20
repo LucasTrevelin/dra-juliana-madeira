@@ -1,25 +1,32 @@
-import React from 'react'
-import FixedComponent from './FixedComponent/FixedComponent'
+import React, { useState } from 'react'
 import * as S from './Header.styled'
+import { ModalMappedLinks } from './ModalMappedLinks/ModalMappedLinks'
+import { headerLinks, headerMenuLinks } from './HeaderLinks'
+import { MappedLinks } from './MappedLinks/MappedLinks'
+import { HamburguerMenu } from './HamburguerMenu'
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const openMenu = () => setIsMenuOpen(!isMenuOpen)
   return (
-    <S.HeaderContainer>
-      <FixedComponent />
+    <>
       <S.Container>
         <S.ImageContainer>
           <S.Image
             src='src/assets/logo-header-transparent.png'
             alt='logo-header'
           />
+          <MappedLinks mappedLinks={headerLinks} />
+          <HamburguerMenu onClick={openMenu} />
         </S.ImageContainer>
       </S.Container>
-      {/*<ModalMappedLinks
+      <ModalMappedLinks
         mappedLinks={headerMenuLinks}
         isOpen={isMenuOpen}
         additionalAction={openMenu}
-      />*/}
-    </S.HeaderContainer>
+      />
+    </>
   )
 }
 

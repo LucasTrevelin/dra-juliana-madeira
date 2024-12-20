@@ -1,5 +1,6 @@
 export const breakpoints = {
   sm: '640px',
+  greetingsBreak: '950px',
   md: '1024px',
   lg: '1024px',
   disordersbreak2: '1052px',

@@ -1,20 +1,32 @@
-import React, { ButtonHTMLAttributes, PropsWithChildren } from 'react'
-
-import { StyledButton } from './styled'
-import { CSSProperties } from 'styled-components'
-
-interface IButtonProps
-  extends PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> {
-  background: CSSProperties['background']
-}
+import { StyledButton } from './Button.styled'
+import { IButtonProps } from './Button.types'
 
 const Button: React.FC<IButtonProps> = ({
   children,
-  background,
-  ...buttonProps
+  variant,
+  title,
+  iconTheme,
+  width,
+  backgroundColor,
+  margin
 }) => {
   return (
-    <StyledButton $background={background} {...buttonProps}>
+    <StyledButton
+      id={variant}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+      }}
+      initial={variant === 'help' && 'hidden'}
+      animate={variant === 'help' && 'visible'}
+      transition={{ ease: 'linear', delay: 0.5 }}
+      $variant={variant}
+      $iconTheme={iconTheme}
+      title={title}
+      $width={width}
+      $backgroundColor={backgroundColor}
+      $margin={margin}
+    >
       {children}
     </StyledButton>
   )

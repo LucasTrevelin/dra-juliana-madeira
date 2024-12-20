@@ -2,11 +2,11 @@ import styled, { css } from 'styled-components'
 import { devices } from '../../helpers/breakpoints.helpers'
 
 const glassEffect = css`
-  background: ${({ theme }) => theme.colors.quaternary60};
+  background: ${({ theme }) => theme.colors.backgroundPrimary60};
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: ${({ theme }) => `1px solid ${theme.colors.quaternary60}`};
+  border: ${({ theme }) => `1px solid ${theme.colors.backgroundPrimary60}`};
 `
 
 export const HeaderContainer = styled.div`
@@ -17,18 +17,16 @@ export const HeaderContainer = styled.div`
 `
 
 export const Container = styled.header`
+  top: 0;
   width: 100%;
-  overflow-x: hidden;
-  height: 5.25rem;
+  height: 5.5rem;
   ${glassEffect}
+  position: -webkit-sticky; /* For Safari */
   position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
   z-index: 30;
-  background-color: ${({ theme }) => theme.colors.backgroundPrimary};
-  padding: 1rem;
 `
 
 export const ImageContainer = styled.div`
@@ -47,8 +45,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  aspect-ratio: 8.83/1;
-  width: 468px;
+  width: 300px;
   margin-left: 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
