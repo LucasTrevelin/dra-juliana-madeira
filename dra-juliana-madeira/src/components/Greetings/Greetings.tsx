@@ -2,6 +2,7 @@ import React from 'react'
 
 import * as S from './Greetings.styled'
 import Button from '../Button/Button'
+import { encodedHelpMessage } from '../../helpers/constants'
 
 const Greetings: React.FC = () => {
   return (
@@ -47,7 +48,10 @@ const Greetings: React.FC = () => {
               Espero que possamos ter uma próspera relação de cuidados à sua
               saúde e bem-estar.
             </S.SecondMessage>
-            <S.ButtonContainer>
+            <S.ButtonContainer
+              target='_blank'
+              href={`https://wa.me/+5521976162422?text=${encodedHelpMessage}`}
+            >
               <Button variant='socialMedia' iconTheme='whatsapp'>
                 <S.ButtonContent>
                   <S.IconFrame>

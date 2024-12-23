@@ -57,7 +57,7 @@ export const IntroFrame = styled(motion.main)`
   height: 480px;
   aspect-ratio: 0.75/1;
   @media screen and (${devices.greetingsMaxBreak}) {
-    height: 350px;
+    height: 380px;
     padding: 1.5rem;
   }
 
@@ -111,12 +111,14 @@ export const CoverPhoto = styled(motion.img)`
   }
 `
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
 `
 
 export const ButtonContent = styled.div`

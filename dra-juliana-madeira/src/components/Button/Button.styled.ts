@@ -7,10 +7,7 @@ const mapperVariants = {
   socialMedia: css<TButtonVariants>`
     width: ${({ $width }) => $width || '15.625rem'};
     @media screen and (${devices.sm}) {
-      width: 12rem;
-    }
-    @media screen and (${devices.sm}) {
-      width: 10rem;
+      width: 14rem;
     }
     height: 3.3rem;
     border-radius: 5px;
