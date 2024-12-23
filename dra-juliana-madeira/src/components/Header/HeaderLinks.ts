@@ -9,9 +9,9 @@ export const headerLinks: TLinkProps[] = [
 ]
 
 export const headerMenuLinks: TLinkProps[] = [
-  { title: 'Contato', variant: 'hamburguer' },
   { title: 'Home', variant: 'hamburguer' },
   { title: 'Tratamentos oferecidos', variant: 'hamburguer' },
   { title: 'Equipamentos', variant: 'hamburguer' },
-  { title: 'Sobre a Dra. Juliana Madeira', variant: 'hamburguer' }
+  { title: 'Sobre a Dra. Juliana Madeira', variant: 'hamburguer' },
+  { title: 'Contato', variant: 'hamburguer' }
 ]

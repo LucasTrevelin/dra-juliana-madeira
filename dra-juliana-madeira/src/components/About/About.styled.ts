@@ -41,6 +41,7 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  text-align: center;
 `
 
 export const Title = styled.h1`
