@@ -4,6 +4,8 @@ import { devices } from './helpers/breakpoints.helpers'
 export default createGlobalStyle`
 :root {
   font-family: "Comfortaa", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+
 }
 
 #root {
