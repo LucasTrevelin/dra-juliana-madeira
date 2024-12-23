@@ -25,7 +25,7 @@ export const SectionTitle = styled.h1`
   text-align: left;
   color: ${({ theme }) => theme.colors.primary};
 
-  @media screen (${devices.headerBreak}) {
+  @media screen and (${devices.headerBreak}) {
     font-size: 2rem;
   }
 `
