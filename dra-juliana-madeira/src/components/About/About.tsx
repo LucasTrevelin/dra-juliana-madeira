@@ -46,7 +46,7 @@ const About: React.FC = () => {
           </S.Text>
         </S.ContentContainer>
       </S.InfoContainer>
-      <S.Image src='src/assets/sobre.png' alt='photo-dra-juliana' />
+      <S.Image src='assets/sobre.png' alt='photo-dra-juliana' />
     </S.Container>
   )
 }

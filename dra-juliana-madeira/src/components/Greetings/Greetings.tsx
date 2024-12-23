@@ -26,7 +26,7 @@ const Greetings: React.FC = () => {
             animate='visible'
             viewport={{ once: true }}
             transition={{ ease: 'linear', delay: 0.3 }}
-            src='src/assets/upper-left-frame.png'
+            src='assets/upper-left-frame.png'
             alt='frame-upper-left'
             $coordinate='up'
           />
@@ -51,7 +51,7 @@ const Greetings: React.FC = () => {
               <Button variant='socialMedia' iconTheme='whatsapp'>
                 <S.ButtonContent>
                   <S.IconFrame>
-                    <S.Icon src='src/assets/whatsapp-icon-white.png' />
+                    <S.Icon src='assets/whatsapp-icon-white.png' />
                   </S.IconFrame>
                   Agende sua consulta
                 </S.ButtonContent>
@@ -64,7 +64,7 @@ const Greetings: React.FC = () => {
             animate='visible'
             viewport={{ once: true }}
             transition={{ ease: 'linear', delay: 0.3 }}
-            src='src/assets/bottom-right-frame.png'
+            src='assets/bottom-right-frame.png'
             alt='frame-bottom-right'
             $coordinate='bottom'
           />
@@ -75,7 +75,7 @@ const Greetings: React.FC = () => {
           animate='visible'
           viewport={{ once: true }}
           transition={{ ease: 'linear', delay: 0.3 }}
-          src='src/assets/cover-photo.jpg'
+          src='assets/cover-photo.jpg'
           alt='cover-photo'
         />
       </S.GreetingsContent>

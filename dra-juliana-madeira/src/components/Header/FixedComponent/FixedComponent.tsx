@@ -8,16 +8,13 @@ const FixedComponent: React.FC = () => {
       <Styled.Container>
         <Styled.MainContent>
           <Styled.TitleContainer>
-            <Styled.Icon
-              src='src/assets/phone-icon-white.png'
-              alt='phone-icon'
-            />
+            <Styled.Icon src='assets/phone-icon-white.png' alt='phone-icon' />
             <Styled.Title>(DDD) XXXX-XXXX</Styled.Title>
           </Styled.TitleContainer>
           <Styled.Title>|</Styled.Title>
           <Styled.TitleContainer>
             <Styled.Icon
-              src='src/assets/whatsapp-icon-white.png'
+              src='assets/whatsapp-icon-white.png'
               alt='whatsapp-icon'
             />
             <Styled.Title>(DDD) XXXX-XXXX</Styled.Title>

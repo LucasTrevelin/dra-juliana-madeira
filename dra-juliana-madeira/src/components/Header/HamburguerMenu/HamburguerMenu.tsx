@@ -7,7 +7,7 @@ export const HamburguerMenu: React.FC<THamburguerMenu> = ({
 }) => {
   return (
     <S.Container onClick={onClick}>
-      <S.Image src='src/assets/hamburguer_menu.png' alt='hamburguer-menu' />
+      <S.Image src='assets/hamburguer_menu.png' alt='hamburguer-menu' />
       {children}
     </S.Container>
   )

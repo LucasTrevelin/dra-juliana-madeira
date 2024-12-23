@@ -7,7 +7,7 @@ import { theme } from '../../../global.styled'
 export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
   contact: (
     <S.ContactCardContainer>
-      <S.Image src='src/assets/contact-logo.png' alt='contact-card-image' />
+      <S.Image src='assets/contact-logo.png' alt='contact-card-image' />
       <S.InfoContainer>
         <S.InformationParagraph>
           <strong>CRM:</strong> XX.XXXXX-X
