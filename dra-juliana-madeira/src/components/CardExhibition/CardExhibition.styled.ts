@@ -36,7 +36,7 @@ export const Title = styled.h1<{ $titleColor?: string }>`
   margin: 0.5rem;
 
   @media screen and (${devices.headerBreak}) {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 `
 

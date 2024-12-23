@@ -46,6 +46,10 @@ export const ContentContainer = styled.div`
 export const Title = styled.h1`
   margin: 0;
   color: ${({ theme }) => theme.colors.primary};
+
+  @media screen and (${devices.headerBreak}) {
+    font-size: 2rem;
+  }
 `
 
 export const Subtitle = styled.p`

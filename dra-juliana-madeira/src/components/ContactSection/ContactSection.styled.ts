@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const ContactSection = styled.div`
   width: 100%;
@@ -23,4 +24,8 @@ export const TitleContainer = styled.div`
 export const SectionTitle = styled.h1`
   text-align: left;
   color: ${({ theme }) => theme.colors.primary};
+
+  @media screen (${devices.headerBreak}) {
+    font-size: 2rem;
+  }
 `
