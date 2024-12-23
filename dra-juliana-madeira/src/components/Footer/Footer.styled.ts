@@ -1,4 +1,4 @@
-import styled, { CSSProperties } from 'styled-components'
+import styled from 'styled-components'
 import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.div`
