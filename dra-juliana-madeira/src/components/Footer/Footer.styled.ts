@@ -1,4 +1,3 @@
-import { style } from 'framer-motion/client'
 import styled, { CSSProperties } from 'styled-components'
 
 export const Container = styled.div`

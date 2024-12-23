@@ -8,12 +8,8 @@ const specialLinkContainer = css<TSpecialLinksProps>`
     $variant !== 'hamburguer' &&
     '0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)'};
   border-radius: ${({ $variant }) =>
-    $variant &&
-    $variant !== 'hamburguer' &&
-    $variant !== 'hamburguer-highlight' &&
-    '1.875rem'};
-  border: ${({ $variant, theme }) =>
-    $variant === 'invertedFilled' && `1px solid ${theme.colors.primary}`};
+    $variant && $variant !== 'hamburguer' && '1.875rem'};
+
   padding: ${({ $variant }) => {
     if (
       $variant &&
@@ -22,16 +18,12 @@ const specialLinkContainer = css<TSpecialLinksProps>`
     )
       return '0.8rem 1.2rem'
   }};
-  background-color: ${({ $variant, theme }) => {
-    if ($variant === 'normalFilled') return theme.colors.secondary
-    if ($variant === 'invertedFilled') return theme.colors.white
-  }};
+
   text-decoration: none;
   margin: ${({ $variant }) => $variant && '0 0.8rem'};
   & > a {
     color: ${({ $variant, theme }) => {
-      if ($variant === 'normalFilled') return theme.colors.white
-      if ($variant === 'hamburguer-highlight') return theme.colors.primary
+      if ($variant === 'hamburguer') return theme.colors.primary
     }};
     text-decoration: none;
 

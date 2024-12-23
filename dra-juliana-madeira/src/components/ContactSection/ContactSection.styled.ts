@@ -10,6 +10,9 @@ export const ContactSection = styled.section`
   row-gap: 3rem;
   height: 17.7rem;
   flex: 1;
+  margin-top: -15.25rem;
+  padding-top: 15.25rem;
+  margin-bottom: 5rem;
 `
 
 export const TitleContainer = styled.div`
@@ -18,7 +21,8 @@ export const TitleContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1rem;
-  border-left: 5px solid ${({ theme }) => theme.colors.primary};
+  margin-top: 10rem;
+  height: min-content;
 `
 
 export const SectionTitle = styled.h1`
