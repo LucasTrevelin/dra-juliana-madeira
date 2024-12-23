@@ -1,6 +1,7 @@
 import React from 'react'
 
 import * as S from './Footer.styled'
+import { encodedHelpMessage } from '../../helpers/constants'
 
 const Footer: React.FC = () => {
   return (
@@ -11,20 +12,32 @@ const Footer: React.FC = () => {
       <S.SocialNetworkContainer>
         <S.Title>Redes Sociais</S.Title>
         <S.ButtonsContainer>
-          <S.Button $orientation='left'>
-            <S.IconButton
-              src='assets/whatsapp-icon-white.png'
-              alt='whatsapp-icon-button'
-              $width='27px'
-            />
-          </S.Button>
-          <S.Button $orientation='right'>
-            <S.IconButton
-              src='assets/instagram-icon-white.png'
-              alt='instagram-icon-button'
-              $width='32px'
-            />
-          </S.Button>
+          <S.Link
+            $orientation='left'
+            target='_blank'
+            href={`https://wa.me/+5521976162422?text=${encodedHelpMessage}`}
+          >
+            <S.Button>
+              <S.IconButton
+                src='assets/whatsapp-icon-white.png'
+                alt='whatsapp-icon-button'
+                $width='27px'
+              />
+            </S.Button>
+          </S.Link>
+          <S.Link
+            $orientation='right'
+            target='_blank'
+            href={`https://www.instagram.com/drajulianamadeiraferreira?igsh=MXN3dXBkMjg0OWswZw==`}
+          >
+            <S.Button>
+              <S.IconButton
+                src='assets/instagram-icon-white.png'
+                alt='instagram-icon-button'
+                $width='32px'
+              />
+            </S.Button>
+          </S.Link>
         </S.ButtonsContainer>
       </S.SocialNetworkContainer>
     </S.Container>

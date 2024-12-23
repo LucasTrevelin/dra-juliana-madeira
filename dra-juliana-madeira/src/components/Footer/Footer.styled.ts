@@ -38,7 +38,7 @@ export const Title = styled.h1`
 
 export const ButtonsContainer = styled.div`
   aspect-ratio: 2.6/1;
-  width: 200px;
+  width: 180px;
   border-radius: 50px;
   background-color: ${({ theme }) => theme.colors.primary};
   border: 1px solid #ffffff;
@@ -47,8 +47,26 @@ export const ButtonsContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const Button = styled.button<{ $orientation: 'left' | 'right' }>`
+export const Button = styled.button`
+  color: inherit;
+  background-color: transparent;
+  outline: 'transparent';
+  border: 0;
+  box-shadow: 0;
+  z-index: 1;
+  &:hover {
+    cursor: pointer;
+  }
+`
+export const IconButton = styled.img<{ $width: CSSProperties['width'] }>`
+  aspect-ratio: 1;
+  width: ${({ $width }) => $width};
+  z-index: 2;
+`
+
+export const Link = styled.a<{ $orientation: 'left' | 'right' }>`
   width: 50%;
+  z-index: 5;
   border: 1px solid #ffffff;
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: ${({ $orientation }) =>
@@ -64,9 +82,4 @@ export const Button = styled.button<{ $orientation: 'left' | 'right' }>`
     cursor: pointer;
     transition: all 0.25s ease-in-out;
   }
-`
-export const IconButton = styled.img<{ $width: CSSProperties['width'] }>`
-  aspect-ratio: 1;
-  width: ${({ $width }) => $width};
-  z-index: 2;
 `

@@ -42,7 +42,7 @@ export const AddressContainer = styled(motion.article)`
 
 export const Image = styled.img`
   aspect-ratio: 7.6/1;
-  width: 17.5rem;
+  width: 20rem;
   margin-bottom: 1.5rem;
 
   @media screen and (${devices.sm}) {
@@ -92,6 +92,7 @@ export const TextContainer = styled.div`
   gap: 5rem;
   text-align: center;
   line-height: 40px;
+  font-size: 1rem;
 `
 
 export const TextParagraph = styled.p`

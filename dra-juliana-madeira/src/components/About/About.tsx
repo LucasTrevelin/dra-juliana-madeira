@@ -15,7 +15,7 @@ const About: React.FC = () => {
       <S.InfoContainer>
         <S.ContentContainer>
           <S.Title>Dra Juliana Madeira</S.Title>
-          <S.Subtitle>CRM-RJ XXXXXX - RQE XXXXX</S.Subtitle>
+          <S.Subtitle>CRM-RJ 814105 - RQE XXXXX</S.Subtitle>
         </S.ContentContainer>
         <S.ContentContainer>
           <S.Text>

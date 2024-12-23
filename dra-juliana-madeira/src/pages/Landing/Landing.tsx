@@ -17,37 +17,39 @@ const Landing: React.FC = () => {
     <S.Container>
       <FixedComponent />
       <Header />
-      <S.Section $justifyContent='center' $margin='5rem 0'>
-        <Greetings />
-      </S.Section>
-      <S.Section $justifyContent='center' $margin='5rem 0'>
-        <Welcome />
-      </S.Section>
-      <S.Section $margin='2rem 0'>
-        <CardExhibition
-          title='Tratamentos oferecidos'
-          subtitle='Conheça os tratamentos oferecidos pela clínica'
-          titleAlign='left'
-          cardsConstants={treatmentsConstants}
-        />
-      </S.Section>
-      <S.Section $margin='2rem 0'>
-        <CardExhibition
-          title='Equipamentos'
-          subtitle='Conheça os equipamentos a serviço da clínica'
-          titleAlign='right'
-          titleColor={theme.colors.primary}
-          boxColor={theme.colors.secondary}
-          cardsConstants={equipmentsConstants}
-        />
-      </S.Section>
-      <S.Section $margin='2rem 0'>
-        <About />
-      </S.Section>
+      <S.Content>
+        <S.Section $justifyContent='center' $margin='5rem 0'>
+          <Greetings />
+        </S.Section>
+        <S.Section $justifyContent='center' $margin='5rem 0'>
+          <Welcome />
+        </S.Section>
+        <S.Section $margin='2rem 0'>
+          <CardExhibition
+            title='Tratamentos oferecidos'
+            subtitle='Conheça os tratamentos oferecidos pela clínica'
+            titleAlign='left'
+            cardsConstants={treatmentsConstants}
+          />
+        </S.Section>
+        <S.Section $margin='2rem 0'>
+          <CardExhibition
+            title='Equipamentos'
+            subtitle='Conheça os equipamentos a serviço da clínica'
+            titleAlign='right'
+            titleColor={theme.colors.primary}
+            boxColor={theme.colors.secondary}
+            cardsConstants={equipmentsConstants}
+          />
+        </S.Section>
+        <S.Section $margin='2rem 0'>
+          <About />
+        </S.Section>
 
-      <S.Section $margin='10rem 0'>
-        <ContactSection />
-      </S.Section>
+        <S.Section $margin='10rem 0'>
+          <ContactSection />
+        </S.Section>
+      </S.Content>
       <Footer />
     </S.Container>
   )

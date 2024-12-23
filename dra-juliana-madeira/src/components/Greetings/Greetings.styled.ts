@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.div`
   display: flex;
@@ -20,6 +21,12 @@ export const GreetingsContent = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   column-gap: 10rem;
+
+  @media screen and (${devices.greetingsSmBreak}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const IntroContent = styled.div`
@@ -49,6 +56,16 @@ export const IntroFrame = styled(motion.main)`
   row-gap: 1.5rem;
   height: 480px;
   aspect-ratio: 0.75/1;
+  @media screen and (${devices.greetingsMaxBreak}) {
+    height: 350px;
+    padding: 1.5rem;
+  }
+
+  @media screen and (${devices.greetingsMidBreak}) {
+    height: 300px;
+    row-gap: 0.5rem;
+    padding: 1rem;
+  }
 `
 
 export const FirstMessage = styled.span`
@@ -56,6 +73,14 @@ export const FirstMessage = styled.span`
   font-size: 1.5rem;
   text-align: left;
   line-height: 2.5rem;
+  @media screen and (${devices.greetingsMaxBreak}) {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  @media screen and (${devices.greetingsMidBreak}) {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
 `
 
 export const SecondMessage = styled.span`
@@ -64,10 +89,26 @@ export const SecondMessage = styled.span`
   text-align: justify;
   line-height: 1.75rem;
   font-family: 'Open Sans', sans-serif;
+
+  @media screen and (${devices.greetingsMaxBreak}) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (${devices.greetingsMidBreak}) {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 `
 export const CoverPhoto = styled(motion.img)`
   aspect-ratio: 0.79/1;
   height: 580px;
+  @media screen and (${devices.greetingsMaxBreak}) {
+    height: 450px;
+  }
+  @media screen and (${devices.greetingsMidBreak}) {
+    height: 320px;
+  }
 `
 
 export const ButtonContainer = styled.div`

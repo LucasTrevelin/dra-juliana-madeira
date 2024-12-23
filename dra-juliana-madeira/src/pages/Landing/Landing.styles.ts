@@ -7,6 +7,14 @@ export const Container = styled.div`
   align-items: center;
 `
 
+export const Content = styled.div`
+  max-width: 1536px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const Section = styled.section<{
   $flexDirection?: CSSProperties['flexDirection']
   $justifyContent?: CSSProperties['justifyContent']

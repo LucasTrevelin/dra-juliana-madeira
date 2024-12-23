@@ -10,7 +10,7 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
       <S.Image src='assets/contact-logo.png' alt='contact-card-image' />
       <S.InfoContainer>
         <S.InformationParagraph>
-          <strong>CRM:</strong> XX.XXXXX-X
+          <strong>CRM-RJ:</strong> 814105
         </S.InformationParagraph>
         <S.InformationParagraph>
           <strong>RQE:</strong> (XXXXX)
@@ -18,14 +18,14 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
       </S.InfoContainer>
       <S.InfoContainer>
         <S.IconTextContainer>
-          <Mail size={'20px'} color={theme.colors.primary} />
+          <Mail size={'18px'} color={theme.colors.primary} />
           <S.InformationParagraph>
-            <em>xxxxxxxxxxx@gmail.com</em>
+            <em>drajulianamadeiradermato@gmail.com</em>
           </S.InformationParagraph>
         </S.IconTextContainer>
         <S.IconTextContainer>
-          <Phone size={'20px'} color={theme.colors.primary} />
-          <S.InformationParagraph>(XX) XXXXX-XXXX</S.InformationParagraph>
+          <Phone size={'18px'} color={theme.colors.primary} />
+          <S.InformationParagraph>(21) 97616-2422</S.InformationParagraph>
         </S.IconTextContainer>
       </S.InfoContainer>
     </S.ContactCardContainer>
@@ -39,13 +39,14 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
       </S.Title>
       <S.TextContainer>
         <S.TextParagraph>
-          <strong>Rua:</strong> Avenida Xxxxxx xx Xxxxxx, XXX
+          <strong>Rua:</strong> Visconde de Pirajá, 595
           <br />
-          <strong>Complemento:</strong> Sala XXX
+          <strong>Complemento:</strong> Edfício Astoria - sala 605
           <br />
-          <strong>Bairro:</strong> Xxxxxxx
+          <strong>Bairro:</strong> Ipanema
           <br />
           <strong>Rio de Janeiro - RJ</strong>
+          <br />
         </S.TextParagraph>
       </S.TextContainer>
     </S.AddressContainerFrame>
