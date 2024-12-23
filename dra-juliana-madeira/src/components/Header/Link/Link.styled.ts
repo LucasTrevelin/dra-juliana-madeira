@@ -71,6 +71,6 @@ export const NavLink = styled.a<TSpecialLinksProps>`
   }
 
   @media screen and (${devices.headerBreak}) {
-    font-size: 12px;
+    font-size: 1rem;
   }
 `
