@@ -18,7 +18,7 @@ const Landing: React.FC = () => {
       <FixedComponent />
       <Header />
       <S.Content>
-        <S.Section $justifyContent='center' $margin='5rem 0'>
+        <S.Section $justifyContent='center' $margin='5rem 0 0 0'>
           <Greetings />
         </S.Section>
         <S.Section $justifyContent='center' $margin='5rem 0'>
@@ -42,11 +42,10 @@ const Landing: React.FC = () => {
             cardsConstants={equipmentsConstants}
           />
         </S.Section>
-        <S.Section $margin='2rem 0'>
+        <S.Section $margin='5rem 0 0 0 '>
           <About />
         </S.Section>
-
-        <S.Section $margin='10rem 0'>
+        <S.Section $margin='0 0 5rem 0'>
           <ContactSection />
         </S.Section>
       </S.Content>

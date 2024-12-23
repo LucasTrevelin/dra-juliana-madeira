@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { TSpecialLinksProps } from './Link.types'
+import { devices } from '../../../helpers/breakpoints.helpers'
 
 const specialLinkContainer = css<TSpecialLinksProps>`
   box-shadow: ${({ $variant }) =>
@@ -67,5 +68,12 @@ export const NavLink = styled.a<TSpecialLinksProps>`
   &:hover {
     text-decoration: underline;
     text-decoration-color: white;
+  }
+
+  @media screen and (${devices.headerBreak}) {
+    font-size: 12px;
+  }
+  @media screen and (${devices.headerBreak}) {
+    font-size: 10px;
   }
 `

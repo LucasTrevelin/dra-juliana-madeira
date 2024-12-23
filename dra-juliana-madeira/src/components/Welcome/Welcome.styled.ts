@@ -7,10 +7,8 @@ export const Container = styled(motion.div)`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   align-items: center;
-  row-gap: 1rem;
-  padding: 1.5rem;
-  padding-top: 6.25rem; /* Adjust according to the desired space */
-  margin-top: -6.25rem; /* This counteracts the padding */
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 3px;
 `
 
 export const Title = styled.p`
@@ -23,7 +21,7 @@ export const Title = styled.p`
 `
 
 export const Subtitle = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.875rem;
   text-align: center;
@@ -31,7 +29,7 @@ export const Subtitle = styled.p`
 `
 
 export const Disclaimer = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.875rem;
   text-align: center;

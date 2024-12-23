@@ -6,7 +6,7 @@ import { encodedHelpMessage } from '../../helpers/constants'
 
 const Greetings: React.FC = () => {
   return (
-    <S.Container>
+    <S.Container id='Home'>
       <S.Greetings
         variants={{
           hiddenLeft: { opacity: 0, x: -30 },

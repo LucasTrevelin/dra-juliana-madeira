@@ -7,11 +7,16 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -6.25rem;
+  padding-top: 6.25rem;
 `
 
 export const Greetings = styled(motion.h1)`
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.secondary};
+  @media screen and (${devices.headerBreak}) {
+    font-size: 2rem;
+  }
 `
 
 export const GreetingsContent = styled.div`
@@ -63,7 +68,6 @@ export const IntroFrame = styled(motion.main)`
 
   @media screen and (${devices.greetingsMidBreak}) {
     height: 300px;
-    row-gap: 0.5rem;
     padding: 1rem;
   }
 `
@@ -107,7 +111,7 @@ export const CoverPhoto = styled(motion.img)`
     height: 450px;
   }
   @media screen and (${devices.greetingsMidBreak}) {
-    height: 320px;
+    height: 370px;
   }
 `
 

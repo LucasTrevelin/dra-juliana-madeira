@@ -8,12 +8,13 @@ export const LinksWrapper = styled.nav`
   height: 100%;
   column-gap: 0.5rem;
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
   flex: 1;
   :hover {
     transition: all 0.3s ease-in-out;
     text-decoration: underline;
   }
+
   @media screen and (${devices.sm}) {
     display: none;
   }

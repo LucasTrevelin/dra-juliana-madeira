@@ -33,7 +33,6 @@ export const ImageContainer = styled.div`
   height: 100%;
   width: 100%;
   flex: 1;
-  margin-left: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,9 +45,13 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   width: 300px;
-  margin-left: 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+
+  @media screen and (${devices.headerSmBreak}) {
+    width: 250px;
+    margin-left: 1.5rem;
+  }
 `
 
 export const SmallScreenImage = styled.img`

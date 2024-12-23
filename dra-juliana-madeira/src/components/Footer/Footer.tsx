@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               <S.IconButton
                 src='assets/whatsapp-icon-white.png'
                 alt='whatsapp-icon-button'
-                $width='27px'
+                $width={27}
               />
             </S.Button>
           </S.Link>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
               <S.IconButton
                 src='assets/instagram-icon-white.png'
                 alt='instagram-icon-button'
-                $width='32px'
+                $width={32}
               />
             </S.Button>
           </S.Link>

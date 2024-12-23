@@ -1,12 +1,12 @@
 import styled, { CSSProperties } from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled.div`
-  margin-top: 10rem;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.backgroundPrimary};
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1.5rem 0;
   align-items: flex-start;
 `
 
@@ -19,6 +19,14 @@ export const ImageFrame = styled.div`
 
 export const Image = styled.img`
   width: 338px;
+
+  @media screen and (${devices.headerBreak}) {
+    width: 200px;
+  }
+
+  @media screen and (${devices.sm}) {
+    width: 150px;
+  }
 `
 
 export const SocialNetworkContainer = styled.div`
@@ -46,6 +54,14 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (${devices.headerBreak}) {
+    width: 120px;
+  }
+
+  @media screen and (${devices.sm}) {
+    width: 100px;
+  }
 `
 export const Button = styled.button`
   color: inherit;
@@ -58,10 +74,14 @@ export const Button = styled.button`
     cursor: pointer;
   }
 `
-export const IconButton = styled.img<{ $width: CSSProperties['width'] }>`
+export const IconButton = styled.img<{ $width: number }>`
   aspect-ratio: 1;
-  width: ${({ $width }) => $width};
+  width: ${({ $width }) => `${$width}px`};
   z-index: 2;
+
+  @media screen and (${devices.sm}) {
+    width: ${({ $width }) => `${$width - 10}px`};
+  }
 `
 
 export const Link = styled.a<{ $orientation: 'left' | 'right' }>`

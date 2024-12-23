@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 const titleAlignMapper = {
   left: 'flex-start',
@@ -33,6 +34,10 @@ export const Title = styled.h1<{ $titleColor?: string }>`
   text-align: left;
   color: ${({ theme, $titleColor }) => $titleColor || theme.colors.black};
   margin: 0.5rem;
+
+  @media screen and (${devices.headerBreak}) {
+    font-size: 1.25rem;
+  }
 `
 
 export const Subtitle = styled.p`
@@ -41,6 +46,10 @@ export const Subtitle = styled.p`
   text-align: left;
   color: ${({ theme }) => theme.colors.secondary};
   margin: 0.5rem;
+
+  @media screen and (${devices.headerBreak}) {
+    font-size: 1rem;
+  }
 `
 
 export const BoxContainer = styled.div<{ $boxColor?: string }>`
@@ -50,18 +59,16 @@ export const BoxContainer = styled.div<{ $boxColor?: string }>`
   background-color: ${({ theme, $boxColor }) =>
     $boxColor || theme.colors.primary};
   overflow-x: auto;
-
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 `
 export const CardContainer = styled.div<{
   $align: 'center' | 'flex-start' | 'flex-end'
 }>`
   display: flex;
-  flex-wrap: nowrap; /* Não permitir quebra de linha */
   justify-content: ${({ $align }) => $align};
   gap: 2rem;
-  width: max-content; /* Permitir que a largura seja dinâmica */
-  bottom: 100px; /* Manter a posição absoluta para ajustar a altura */
-  width: 100%;
-  padding: 0 1rem;
+
+  @media screen and (${devices.headerBreak}) {
+    justify-content: flex-start;
+  }
 `

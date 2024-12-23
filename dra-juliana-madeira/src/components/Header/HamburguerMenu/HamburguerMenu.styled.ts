@@ -13,7 +13,7 @@ export const Container = styled.button`
   position: relative;
   right: 2rem;
 
-  @media screen and (${devices.sm}) {
+  @media screen and (${devices.headerBreak}) {
     display: flex;
   }
 `

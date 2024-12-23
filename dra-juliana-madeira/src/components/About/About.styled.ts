@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Container = styled(motion.div)`
   display: flex;
@@ -8,13 +9,33 @@ export const Container = styled(motion.div)`
   gap: 2rem;
   margin-top: -6.25rem;
   padding-top: 6.25rem;
+
+  @media screen and (${devices.headerBreak}) {
+    display: none;
+  }
+`
+
+export const SmallDevicesContainer = styled(motion.div)`
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: -6.25rem;
+  padding-top: 6.25rem;
+
+  @media screen and (${devices.headerBreak}) {
+    display: flex;
+  }
 `
 
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   row-gap: 2rem;
-  max-width: 50%;
+  max-width: 100%;
 `
 export const ContentContainer = styled.div`
   display: flex;
@@ -44,4 +65,8 @@ export const Text = styled.p`
 export const Image = styled.img`
   aspect-ratio: 0.75/1;
   width: 30%;
+
+  @media screen and (${devices.headerBreak}) {
+    width: 50%;
+  }
 `

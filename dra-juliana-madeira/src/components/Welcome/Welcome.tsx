@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 
 import * as S from './Welcome.styled'
-import Button from '../Button/Button'
 
 const Welcome: React.FC = () => {
   const scrollRef = useRef(null)
@@ -12,25 +11,18 @@ const Welcome: React.FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ root: scrollRef, once: true }}
       transition={{ ease: 'linear', delay: 0.5 }}
-      id='Home'
     >
       <S.Title>Seja bem-vindo(a)</S.Title>
       <S.Subtitle>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor."
+        Dermatologia clínica e Estética além de Tratamentos Capilares
+        individualizados.
+        <br />
       </S.Subtitle>
       <S.Disclaimer>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor."
+        Testes Alérgicos para tratamento de asma, Rinite e Dermatite atópica
+        como Prick teste e Teste de contato para diagnóstico de alergias como
+        urticárias além de Imunoterapia Alergeno Específica.
       </S.Disclaimer>
-
-      <Button variant='socialMedia'>
-        <span>Botão para alguma ação</span>
-      </Button>
     </S.Container>
   )
 }
