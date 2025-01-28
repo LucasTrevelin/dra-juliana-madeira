@@ -3,7 +3,7 @@ export interface ICardProps extends ICardDefaultProps, ICardDetailsProps {}
 interface ICardDetailsProps {
   title: string
   imageUrl: string
-  text: string
+  text?: string
 }
 
 interface ICardDefaultProps {

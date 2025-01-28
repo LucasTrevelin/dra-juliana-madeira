@@ -10,12 +10,12 @@ const SmallDevices: React.FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ root: scrollRef, once: true }}
       transition={{ ease: 'linear', delay: 0.6 }}
-      id='Sobre a Dra. Juliana Madeira'
+      id='Sobre a dra. Juliana Madeira'
     >
       <S.InfoContainer>
         <S.ContentContainer>
           <S.Title>Dra Juliana Madeira</S.Title>
-          <S.Subtitle>CRM-RJ 814105 - RQE XXXXX</S.Subtitle>
+          <S.Subtitle>CRM-RJ 814105</S.Subtitle>
         </S.ContentContainer>
         <S.Image src='assets/sobre.png' alt='photo-dra-juliana' />
         <S.ContentContainer>

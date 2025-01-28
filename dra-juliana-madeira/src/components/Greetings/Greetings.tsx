@@ -79,7 +79,7 @@ const Greetings: React.FC = () => {
           animate='visible'
           viewport={{ once: true }}
           transition={{ ease: 'linear', delay: 0.3 }}
-          src='assets/cover-photo.jpg'
+          src='assets/cover-photo-2.png'
           alt='cover-photo'
         />
       </S.GreetingsContent>

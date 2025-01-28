@@ -12,9 +12,6 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
         <S.InformationParagraph>
           <strong>CRM-RJ:</strong> 814105
         </S.InformationParagraph>
-        <S.InformationParagraph>
-          <strong>RQE:</strong> (XXXXX)
-        </S.InformationParagraph>
       </S.InfoContainer>
       <S.InfoContainer>
         <S.IconTextContainer>

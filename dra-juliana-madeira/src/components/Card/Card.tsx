@@ -11,17 +11,19 @@ const Card: React.FC<ICardProps> = ({ imageUrl, onClick, text, title }) => {
       <S.Image src={imageUrl} alt='title' />
       <S.Content>
         <S.CardTitle>{title}</S.CardTitle>
-        <S.CardText>{text}</S.CardText>
+        {!!text && <S.CardText>{text}</S.CardText>}
       </S.Content>
-      <Button
-        onClick={onClick}
-        variant='socialMedia'
-        width='50%'
-        backgroundColor={theme.colors.backgroundSecondary}
-        margin='0 0 1rem 0'
-      >
-        <span>Saiba mais</span>
-      </Button>
+      {!!text && (
+        <Button
+          onClick={onClick}
+          variant='socialMedia'
+          width='50%'
+          backgroundColor={theme.colors.backgroundSecondary}
+          margin='0 0 1rem 0'
+        >
+          <span>Saiba mais</span>
+        </Button>
+      )}
     </S.Container>
   )
 }

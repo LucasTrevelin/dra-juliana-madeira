@@ -2,21 +2,27 @@ import { ICardProps } from '../Card/Card.types'
 
 export const equipmentsConstants: ICardProps[] = [
   {
-    imageUrl: 'assets/dummy_image.png',
+    imageUrl: 'assets/capellux_rw.jpg',
     onClick: () => false,
-    title: 'Equipamento 1',
-    text: 'Explicação resumida sobre o equipamento, pode compreender até umas 2 ou 3 linhas'
+    title: 'Capellux',
+    text: ''
   },
   {
-    imageUrl: 'assets/dummy_image.png',
+    imageUrl: 'assets/cheyenne_mmp_rw.jpg',
     onClick: () => false,
-    title: 'Equipamento 2',
-    text: 'Explicação resumida sobre o equipamento, pode compreender até umas 2 ou 3 linhas'
+    title: 'Cheyenne MMP',
+    text: ''
   },
   {
-    imageUrl: 'assets/dummy_image.png',
+    imageUrl: 'assets/laser_lavieen_rw.jpg',
     onClick: () => false,
-    title: 'Equipamento 3',
-    text: 'Explicação resumida sobre o equipamento, pode compreender até umas 2 ou 3 linhas'
+    title: 'Laser Lavieen',
+    text: ''
+  },
+  {
+    imageUrl: 'assets/ultraformer_mpt_rw.jpg',
+    onClick: () => false,
+    title: 'Ultraformer Mpt',
+    text: ''
   }
 ]

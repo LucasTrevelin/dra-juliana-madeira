@@ -105,7 +105,6 @@ export const SecondMessage = styled.span`
   }
 `
 export const CoverPhoto = styled(motion.img)`
-  aspect-ratio: 0.79/1;
   height: 580px;
   @media screen and (${devices.greetingsMaxBreak}) {
     height: 450px;
