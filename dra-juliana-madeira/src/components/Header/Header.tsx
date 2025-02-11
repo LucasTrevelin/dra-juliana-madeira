@@ -13,7 +13,10 @@ const Header: React.FC = () => {
     <>
       <S.Container>
         <S.ImageContainer>
-          <S.Image src='assets/logo-header-transparent.png' alt='logo-header' />
+          <S.Image
+            src='assets/logo-header-transparent-60.png'
+            alt='logo-header'
+          />
           <MappedLinks mappedLinks={headerLinks} />
           <HamburguerMenu onClick={openMenu} />
         </S.ImageContainer>

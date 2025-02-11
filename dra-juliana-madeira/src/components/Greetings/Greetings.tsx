@@ -19,7 +19,7 @@ const Greetings: React.FC = () => {
             animate='visible'
             transition={{ ease: 'linear', delay: 0.3 }}
           >
-            Olá, Paciente
+            Prazer, Dra. Juliana Madeira
           </S.Greetings>
           <S.Messages>
             <S.FirstMessage>
@@ -41,7 +41,7 @@ const Greetings: React.FC = () => {
             animate='visible'
             viewport={{ once: true }}
             transition={{ ease: 'linear', delay: 0.3 }}
-            src='assets/upper-left-frame.png'
+            src='assets/upper-left-frame-2.png'
             alt='frame-upper-left'
             $coordinate='up'
           />
@@ -60,7 +60,7 @@ const Greetings: React.FC = () => {
             animate='visible'
             viewport={{ once: true }}
             transition={{ ease: 'linear', delay: 0.3 }}
-            src='assets/bottom-right-frame.png'
+            src='assets/bottom-right-frame-2.png'
             alt='frame-bottom-right'
             $coordinate='bottom'
           />

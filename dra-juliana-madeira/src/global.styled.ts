@@ -52,9 +52,10 @@ export const theme = {
   colors: {
     primary: '#121212',
     secondary: '#121212',
-    terciary: `#D5BF8E`,
-    backgroundPrimary: '#FFF8EB',
-    backgroundPrimary60: 'rgba(255, 248, 235, 0.6)',
+    tertiary: `#D5BF8E`,
+    quaternary: `#222324`,
+    backgroundPrimary: '#666465',
+    backgroundPrimary60: 'rgba(102,100,101, 0.8)',
     backgroundSecondary: '#E9E9E9',
     redHighlight: '#3F090C',
     greenLight: '#98FB98',

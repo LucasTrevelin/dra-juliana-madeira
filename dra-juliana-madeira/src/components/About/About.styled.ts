@@ -59,7 +59,7 @@ export const Subtitle = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
 `
 
-export const Text = styled.p`
+export const Text = styled.span`
   font-size: 1rem;
   margin: 0;
   color: ${({ theme }) => theme.colors.black};

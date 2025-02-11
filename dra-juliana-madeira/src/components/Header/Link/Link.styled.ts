@@ -22,17 +22,23 @@ const specialLinkContainer = css<TSpecialLinksProps>`
 
   text-decoration: none;
   margin: ${({ $variant }) => $variant && '0 0.8rem'};
+  &:hover {
+    text-decoration: none;
+  }
   & > a {
     color: ${({ $variant, theme }) => {
       if ($variant === 'hamburguer') return theme.colors.primary
+      return theme.colors.white
     }};
-    text-decoration: none;
 
-    border-bottom: ${({ $variant, theme }) =>
-      $variant === 'hamburguer-highlight' && `2px solid ${theme.colors.black}`};
+    border-bottom: ${({ $variant, theme }) => {
+      if ($variant === 'hamburguer-highlight')
+        return `2px solid ${theme.colors.black}`
+      return theme.colors.white
+    }};
 
     &:hover {
-      text-decoration: none;
+      text-decoration-color: white;
     }
   }
 `
@@ -43,6 +49,7 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   height: ${({ $variant }) => !$variant && '100%'};
   :hover {
     cursor: pointer;
@@ -61,7 +68,8 @@ export const NavLink = styled.a<TSpecialLinksProps>`
       : '0 0.5rem'};
 
   scroll-behavior: smooth;
-  color: inherit;
+  color: ${({ theme }) => `1px solid ${theme.colors.white}`};
+
   text-decoration: none;
   font-size: 14px;
 

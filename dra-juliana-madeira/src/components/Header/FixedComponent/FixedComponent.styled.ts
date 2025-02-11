@@ -16,7 +16,7 @@ export const ComponentContainer = styled.div`
 export const Container = styled.header`
   width: 100%;
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.gray};
+  border: ${({ theme }) => `1px solid ${theme.colors.gray}`};
   color: ${({ theme }) => theme.colors.white};
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   ${centralizerProps};

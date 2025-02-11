@@ -11,12 +11,14 @@ import { equipmentsConstants } from '../../components/CardExhibition/EquipmentCo
 import About from '../../components/About/About'
 import { ContactSection } from '../../components/ContactSection'
 import Footer from '../../components/Footer/Footer'
+import IntroVideo from '../../components/IntroVideo/IntroVideo'
 
 const Landing: React.FC = () => {
   return (
     <S.Container>
       <FixedComponent />
       <Header />
+      <IntroVideo />
       <S.Content>
         <S.Section $justifyContent='center' $margin='5rem 0 0 0'>
           <Greetings />
@@ -24,6 +26,7 @@ const Landing: React.FC = () => {
         <S.Section $justifyContent='center' $margin='5rem 0'>
           <Welcome />
         </S.Section>
+
         <S.Section $margin='2rem 0'>
           <CardExhibition
             title='Tratamentos oferecidos'

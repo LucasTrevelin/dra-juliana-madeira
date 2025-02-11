@@ -22,7 +22,7 @@ export const Greetings = styled(motion.h1)`
 export const GreetingsContent = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   column-gap: 10rem;
@@ -42,6 +42,8 @@ export const GreetingsLeft = styled.div`
   width: 50%;
 `
 export const Messages = styled.div`
+  display: flex;
+  flex-direction: column;
   row-gap: 2rem;
   margin-bottom: 1rem;
 `
@@ -100,7 +102,7 @@ export const FirstMessage = styled.span`
 `
 
 export const SecondMessage = styled.span`
-  color: ${({ theme }) => theme.colors.terciary};
+  color: ${({ theme }) => theme.colors.tertiary};
   font-size: 1.25rem;
   text-align: justify;
   line-height: 1.75rem;

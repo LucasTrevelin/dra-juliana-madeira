@@ -5,14 +5,12 @@ export const Container = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.gray};
   align-items: center;
   padding: 1rem 1rem 2rem 1rem;
   border-radius: 3px;
 `
 
-export const Title = styled.p`
-  font-size: 1rem;
+export const Title = styled.h1`
   font-weight: bold;
   line-height: 1.25rem;
   text-align: center;
@@ -25,7 +23,7 @@ export const Subtitle = styled.p`
   font-weight: bold;
   line-height: 1.875rem;
   text-align: center;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.tertiary};
 `
 
 export const Disclaimer = styled.p`

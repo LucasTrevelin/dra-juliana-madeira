@@ -27,6 +27,9 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   z-index: 30;
+  @media screen and (${devices.sm}) {
+    height: 4rem;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -44,7 +47,8 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  width: 300px;
+  height: 100%;
+  aspect-ratio: 3.98/1;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
