@@ -11,8 +11,8 @@ const mapperVariants = {
     }
     height: 3.3rem;
     border-radius: 5px;
-    background-color: ${({ theme, $backgroundColor }) =>
-      $backgroundColor || theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.primary};
+    border: ${({ theme }) => `1px solid ${theme.colors.greenWhatsApp}`};
     color: ${({ theme, $iconTheme }) => $iconTheme && theme.colors.white};
     margin: ${({ $margin }) => $margin || '0'};
   `,
@@ -49,9 +49,7 @@ export const StyledButton = styled(motion.button)<TButtonVariants>`
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: 600;
   white-space: nowrap;
-  color: ${({ theme }) => theme.colors.black};
   outline: none;
-  border: 0;
   z-index: 5;
   aspect-ratio: 4.8/1;
   &:hover {

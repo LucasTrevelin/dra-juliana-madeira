@@ -12,8 +12,8 @@ export const Container = styled.div`
 `
 
 export const Greetings = styled(motion.h1)`
-  font-size: 3rem;
-  color: ${({ theme }) => theme.colors.secondary};
+  font-size: 4rem;
+  color: ${({ theme }) => theme.colors.white};
   @media screen and (${devices.headerBreak}) {
     font-size: 2rem;
   }
@@ -32,6 +32,18 @@ export const GreetingsContent = styled.div`
     justify-content: center;
     align-items: center;
   }
+`
+
+export const GreetingsLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+`
+export const Messages = styled.div`
+  row-gap: 2rem;
+  margin-bottom: 1rem;
 `
 
 export const IntroContent = styled.div`
@@ -88,7 +100,7 @@ export const FirstMessage = styled.span`
 `
 
 export const SecondMessage = styled.span`
-  color: ${({ theme }) => theme.colors.redHighlight};
+  color: ${({ theme }) => theme.colors.terciary};
   font-size: 1.25rem;
   text-align: justify;
   line-height: 1.75rem;
@@ -119,7 +131,7 @@ export const ButtonContainer = styled.a`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0;
   color: inherit;
   text-decoration: none;
 `

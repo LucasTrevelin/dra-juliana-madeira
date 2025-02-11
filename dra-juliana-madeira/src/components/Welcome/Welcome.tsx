@@ -15,7 +15,6 @@ const Welcome: React.FC = () => {
       <S.Title>Seja bem-vindo(a)</S.Title>
       <S.Subtitle>
         Dermatologia clínica e Estética além de Tratamentos Capilares
-        individualizados.
         <br />
       </S.Subtitle>
       <S.Disclaimer>

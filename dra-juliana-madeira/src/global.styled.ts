@@ -15,7 +15,7 @@ export default createGlobalStyle`
   
   color-scheme: light dark;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #121212;
   min-width: 100vw;
   width: 100%;
 
@@ -50,8 +50,9 @@ body {
 //Global colors
 export const theme = {
   colors: {
-    primary: '#D5BF8E',
-    secondary: '#8F8B8A',
+    primary: '#121212',
+    secondary: '#121212',
+    terciary: `#D5BF8E`,
     backgroundPrimary: '#FFF8EB',
     backgroundPrimary60: 'rgba(255, 248, 235, 0.6)',
     backgroundSecondary: '#E9E9E9',
